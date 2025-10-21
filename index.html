@@ -48,15 +48,29 @@
       color: #333;
     }
 
-    /* Navbar */
+   /* Navbar */
     .navbar {
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background-color: #e3f2fd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
 
     .navbar-brand img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
       border-radius: 50%;
-      margin-right: 8px;
+      margin-right: 6px;
     }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+   .nav-link:hover {
+      color: darkmagenta !important;
+    }
+
 
     /* Hero Section */
      .hero {
@@ -129,6 +143,29 @@
     }
 
     @media (max-width: 768px) {
+       /* Navbar */
+    .navbar {
+      background-color: #e3f2fd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+    .nav-link:hover {
+      color: darkmagenta !important;
+    }
+
       .hero h1 {
         font-size: 2rem;
       }

@@ -30,8 +30,202 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  
+
+    <style>
+        /* ========== General Reset ========== */
+        body{
+            background: linear-gradient(45deg, #ff0000, #0000ff);
+
+        }
+       h1 {
+        font-size: 3.9rem;
+        color: white;
+      }
+     .txt{
+      color: white;
+     }
+
+
+
+/* ========== Navbar ========== */
+.navbar {
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-link:hover {
+      color: darkmagenta !important;
+    }
+
+/* ========== Gallery Section ========== */
+.image {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.image h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  max-width: 380px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease,box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+/* ========== Modal ========== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ========== Footer ========== */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background: #e3f2fd;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: purple;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ========== RESPONSIVENESS ========== */
+
+/* For tablets */
+@media (max-width: 992px) {
+ /* Navbar */
+    .navbar {
+      background-color: #e3f2fd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+   .nav-link:hover {
+      color: darkmagenta !important;
+    }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .image h1 {
+    font-size: 2.7rem;
+  }
+}
+
+/* For mobiles */
+@media (max-width: 576px) {
+  /* Navbar */
+    .navbar {
+      background-color: #e3f2fd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+  .nav-link:hover {
+      color: darkmagenta !important;
+    }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
+  .image h1 {
+    font-size: 2.5rem;
+  }
+  footer {
+    font-size: 13px;
+    padding: 15px;
+  }
+  .modal-content {
+    width: 95%;
+  }
+}
+    </style>
 </head>
 
 
@@ -126,9 +320,10 @@
     </section>
     
              <!-- Footer -->
-  <footer>
+                <footer>
     <p>© 2025 Frontend RoadMap (Suzen). Made with ❤️ by <a href="https://suzen-kumar-mohanty-8fdv.vercel.app" target="_blank">Suzen Kumar Mohanty</a> Date:-18/10/2025</p>
   </footer>
+
             
      
     <!-- Required JS Libraries -->

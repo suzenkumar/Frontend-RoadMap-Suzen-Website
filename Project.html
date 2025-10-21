@@ -2,99 +2,395 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Frontend RoadMap (Suzen) |  My Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frontend RoadMap (Suzen) | My Project</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore Suzen's frontend roadmap and certifications in web development. Track progress in HTML, CSS, JavaScript, and frameworks." />
-    <meta name="keywords" content="Frontend Roadmap, Suzen, Web Development Certificates, Learn HTML, CSS, JavaScript, Frontend Developer" />
-    <meta name="author" content="Suzen" />
-    <meta name="robots" content="index, follow" />
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Explore Suzen's frontend roadmap and certifications in web development. Track progress in HTML, CSS, JavaScript, and frameworks." />
+  <meta name="keywords"
+    content="Frontend Roadmap, Suzen, Web Development Certificates, Learn HTML, CSS, JavaScript, Frontend Developer" />
+  <meta name="author" content="Suzen" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Frontend RoadMap (Suzen) | My Certificates" />
-    <meta property="og:description" content="Discover Suzen's learning journey and achievements in frontend development." />
-    <meta property="og:type" content="website" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Frontend RoadMap (Suzen) | My Certificates" />
+  <meta property="og:description" content="Discover Suzen's learning journey and achievements in frontend development." />
+  <meta property="og:type" content="website" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Frontend RoadMap (Suzen) | My Certificates" />
-    <meta name="twitter:description" content="See Suzen's web development journey and frontend certifications." />
- 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Frontend RoadMap (Suzen) | My Certificates" />
+  <meta name="twitter:description" content="See Suzen's web development journey and frontend certifications." />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/about.jpg" type="image/x-icon" />
+  <!-- Favicon -->
+  <link rel="icon" href="images/about.jpg" type="image/x-icon" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS -->
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+       background: linear-gradient(45deg, #ff0000, #0000ff);
+    
+    }
+     /* Navbar */
+    .navbar {
+      background-color: #e3f2fd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+   .nav-link:hover {
+      color: darkmagenta !important;
+    }
+
+
+        .proj{
+    margin: 0;
+  height: 490vh;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 2rem;
+  background: linear-gradient(45deg, #ff0000, #0000ff);
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
+
+
+    }
+
+    h1, h3, h2, p {
+      word-wrap: break-word;
+    }
+
+    h3 {
+        font-size: 2.1rem;
+        color: #ff0000;
+      }
+     h1 {
+        font-size: 3.9rem;
+        color: white;
+      }
+      
+     .txt{
+      color: white;
+     }
+
+    .pro {
+      padding: 40px 20px;
+    }
+
+    .projectcard {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f8f9fa;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 25px auto;
+      padding: 20px;
+      max-width: 1000px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .projectcard:hover {
+      transform: scale(1.02);
+    }
+
+    .project-image img {
+      width: 280px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      flex: 1;
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    .tech {
+      font-weight: bold;
+      margin-top: 10px;
+      color: darkgreen;
+    }
+
+    .btns {
+      margin-top: 15px;
+    }
+
+    .github-btn {
+      display: inline-block;
+      background-color: #e01fb9;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-right: 8px;
+      margin-bottom: 5px;
+    }
+
+    .github-btn:hover {
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .github-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+      margin: 40px 0;
+      padding: 20px;
+    }
+
+    .github-card, .card {
+      flex: 1 1 300px;
+      max-width: 400px;
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .github-card img, .card iframe {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    iframe {
+      border: none;
+      min-height: 200px;
+    }
+
+    footer {
+      background: #e3f2fd;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: purple;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .lightbox img {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      height: auto;
+    }
+
+    .close-lightbox {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .lightbox:target {
+      display: block;
+    }
+
+    /* Responsive Design Enhancements */
+    @media (max-width: 992px) {
+       /* Navbar */
+    .navbar {
+      background-color: #e3f2fd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+    .nav-link:hover {
+      color: darkmagenta !important;
+    }
+
+      .projectcard {
+        flex-direction: column;
+        text-align: center;
+      }
+       .txt{
+        color: white;
+      }
+       h1 {
+        font-size: 3.9rem;
+        color: white;
+      }
+      h3 {
+        font-size: 2.1rem;
+        color: #ff0000;
+      }
+
+      .project-content {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+
+      .project-image img {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .github-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .github-card, .card {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+       /* Navbar */
+    .navbar {
+      background-color: #e3f2fd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+  .nav-link:hover {
+      color: darkmagenta !important;
+    }
+
+      h1 {
+        font-size: 3.9rem;
+        color: white;
+      }
+
+      h3 {
+        font-size: 2.1rem;
+        color: #ff0000;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: black;
+      }
+       
+      .txt{
+        color: white;
+      }
+
+      .github-btn {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
-
-
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="#">
-            <img src="images/about.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
-            Frontend RoadMap(Suzen)
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <a class="navbar-brand" href="#">
+      <img src="images/about.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+      Frontend RoadMap (Suzen)
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link"
-                        href="https://suzen-kumar-mohanty-8fdv.vercel.app">
-                        My Portfolio</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link " href="MyRoadMap.html">RoadMap</a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link " href="Project.html">Sucessfull Projects</a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link " href="My Certificates.html">My Certificates</a>
-                </li>
-
-                 <li class="nav-item active">
-                    <a class="nav-link " href="website.html">Recommend  Important Websites</a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link " href="Recommend Youtube Channel's.html">Recommend Youtube Channel's</a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link "
-                        href="https://suzen-kumar-mohanty-8fdv.vercel.app/#contact">Contact
-                        Me</a>
-                </li>
-
-
-
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://suzen-kumar-mohanty-8fdv.vercel.app">My Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="MyRoadMap.html">RoadMap</a></li>
+        <li class="nav-item"><a class="nav-link" href="Project.html">Successful Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="My Certificates.html">My Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="website.html">Important Websites</a></li>
+        <li class="nav-item"><a class="nav-link" href="Recommend Youtube Channel's.html">YouTube Channels</a></li>
+        <li class="nav-item"><a class="nav-link"
+            href="https://suzen-kumar-mohanty-8fdv.vercel.app/#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <section class="pro">
     <center>
 
       <h1>MY PROJECTS</h1>
-      <p> Projects With Source Code And Website</p>
+      <p class="txt"> Projects With Source Code And Website</p>
 
 
 
